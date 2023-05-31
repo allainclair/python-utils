@@ -1,0 +1,2 @@
+PATH_TO_THIS_REPO=$HOME/git/github/python-utils
+python $PATH_TO_THIS_REPO/path_to_module.py $1
