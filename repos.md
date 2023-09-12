@@ -16,4 +16,4 @@ icecream: https://github.com/gruns/icecream
 
 ### Test
 
-pytest-xdist: https://github.com/pytest-dev/pytest-xdist  `# pytest-xdist --looponfail` (`-f`)
+https://github.com/olzhasar/pytest-watcher
