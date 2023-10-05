@@ -1,0 +1,28 @@
+[tool.ruff]
+line-length = 160
+
+# Suggestions to add to select: EM
+select = [
+	"E",
+	"F",
+	"I",
+	"W",
+	"N",
+	"COM",
+	"C4",
+	"PIE",
+	"T20",
+	"Q",
+	"RET",
+	"SIM",
+	"ARG",
+	"PGH",
+	"RUF",
+]
+ignore = ["W191"]  # Indentation contains tabs.
+
+[tool.ruff.isort]
+case-sensitive = true
+
+[tool.ruff.mccabe]
+max-complexity = 10
