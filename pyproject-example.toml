@@ -1,0 +1,62 @@
+[tool.ruff]
+line-length = 160
+
+# Suggestions to add to select: EM
+select = [
+	"E",
+	"F",
+	"I",
+	"W",
+	"N",
+	"COM",
+	"C4",
+	"PIE",
+	"T20",
+	"Q",
+	"RET",
+	"SIM",
+	"ARG",
+	"PGH",
+	"RUF",
+]
+ignore = [
+	# https://docs.astral.sh/ruff/formatter/#format-suppression
+	"COM812",
+	"COM819",
+	"E111",
+	"E114",
+	"E117",
+	"D206",
+	"D300",
+	"ISC001",
+	"ISC002",
+	"Q000",
+	"Q001",
+	"Q002",
+	"Q003",
+	"W191",
+
+	"RUF009",  # Missing dataclass field.
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "tab"
+
+[tool.ruff.isort]
+case-sensitive = true
+split-on-trailing-comma = false
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+log_cli = true
+
+[tool.pytest-watcher]
+now = true
+
